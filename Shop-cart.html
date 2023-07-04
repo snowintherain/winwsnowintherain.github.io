@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	  <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>购物车</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/icon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/icon.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/icon.png" rel="shortcut icon">
+    
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div> <!-- /.loading-overlay -->
+    <header class="style1">
+        <div id="site-header">
+        <div class="container-fluid">
+             <a href="index.html" class="logo"><img src="image/logo.png" alt="image" width="129" height="37" data-retina="image/logo-2x.png" data-width="147" data-height="21"></a>
+             <div class="mobile-button">
+                <span></span>
+             </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav animated wow fadeInUp animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
+								<li class="active">
+									<a href="index.html">首页</a>
+								</li>
+								<li>
+									<a href="about.html">酒文化</a>
+								</li>
+								<li>
+									<a href="wines.html">酒庄</a>
+								</li>
+								<li>
+									<a href="products.html">酒品种</a>
+								</li>
+								<li>
+									<a href="Shop-cart.html">酒款</a>
+								</li>
+								<li>
+									<a href="contact.html">联系</a>
+								</li>
+								<li>
+									<a href="login.html">登录</a>
+								</li>
+								<li>
+									<a href="register.html">注册</a>
+								</li>
+							</ul>
+						</div>
+             <div class="search clearfix"> 
+                 <ul>
+                     <li><input type="search" id="search" placeholder="Search..." ></li>
+                     <li><a href="#" class="header-search-icon"><i class="ti-search" aria-hidden="true"></i></a></li>       
+                     <li><a href="#"> <i class="ti-align-justify" aria-hidden="true"></i> </a>
+                        <ul class="sub-menu">
+                            <li><a href="projects1.html" title="">Login/ Register</a></li>
+                            <li><a href="projects1.html" title="">My Account</a></li>
+                            <li><a href="projects1.html" title="">My Wishlist</a></li>
+                            <li><a href="projects1.html" title="">My Cart</a></li>
+                            <li><a href="projects1.html" title="">Tracking Orders</a></li>
+                            <li class="language"><a href="projects1.html" title="">LANGUAGE</a></li>
+                            <li class="flag"><a href="projects1.html" title="">
+                                <span><img src="image/flash3.png" alt="image"></span>
+                                <span><img src="image/flash1.png" alt="image"></span>
+                                <span><img src="image/flash2.png" alt="image"></span>
+                            </a></li>
+                        </ul><!-- /.sub-menu -->
+                      </li>
+                 </ul>     
+                 <form class="header-search-form" role="search" method="get" action="#">
+                    <input type="text" value="" name="#" class="header-search-field" placeholder="Search...">
+                    <button type="submit" class="header-search-submit" title="Search"><i class="fa fa-search"></i></button>
+                 </form>           
+             </div>
+        </div><!-- /container -->
+        </div>
+    </header>
+    <div class="page-title parallax parallax1 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-title-content text-center">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Product</a></li>
+                                    <li class="blog"><a href="#">Shopping Cart</a></li>
+                                </ul>
+                            </div>
+                            <div class="page-title-heading">
+                                 <h2 class="title"><a href="#">Cart</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div> <!-- /.page-title -->
+<div class="main-shop-cart">
+    <section class="flat-cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="woocommerce-tabs wc-tabs-wrapper">
+                        <ul class="tabs">
+                            <li><a class="tab active" data-id ='#tab-description' href="#"><i class="  icon_bag" aria-hidden="true"></i>SHOPPING CART</a></li>
+                            <li><a class="tab" data-id ='#tab-reviews' href="#"><i class=" icon_ribbon" aria-hidden="true"></i>CHECK OUT</a></li>
+                            <li><a class="tab" data-id ='#tab-order' href="#"><i class="arrow_carrot-down_alt" aria-hidden="true"></i>ORDER COMPLETE</a></li>
+                        </ul>
+                        <div class="cart-wrap">
+                            <div id="tab-description" class="tab-content">
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th class="delete">×</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="text-center image"><img src="image/homepage132.png" alt="image"></td>
+                                        <td class="list text">Bougrier Rose d'Anjou</td>
+                                        <td class="text-center list price">$34.99</td>
+                                        <td class="text-center list quantity">
+                                            <ul class="quantity-menu">
+                                                <li><i class="fa fa-minus-circle" aria-hidden="true"></i></li>
+                                                <li>2</li>
+                                                <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </td>
+                                        <td class="text-center list price">$69.98</td>
+                                        <td class="text-center delete">×</td>
+                                      </tr>
+                                      <tr>
+                                            <td class="text-center"><img src="image/homepage133.png" alt="image"></td>
+                                            <td class="list text">D'Autrefois Rose de Pinot Noir</td>
+                                            <td class="text-center list price">$28.99</td>
+                                            <td class="text-center list">
+                                            <ul>
+                                                <li><i class="fa fa-minus-circle" aria-hidden="true"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </td>
+                                        <td class="text-center list price">$28.99</td>
+                                        <td class="text-center delete">×</td>
+                                      </tr>
+                                      <tr>
+                                            <td class="text-center"><img src="image/homepage134.png" alt="image"></td>
+                                            <td class="list text">Chateau Vivonne Bandol Rose</td>
+                                            <td class="text-center list price">$46.99</td>
+                                            <td class="text-center list">
+                                                <ul>
+                                                    <li><i class="fa fa-minus-circle" aria-hidden="true"></i></li>
+                                                    <li>3</li>
+                                                    <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-center list price">$40.97</td>
+                                            <td class="text-center delete">×</td>
+                                      </tr>
+                                      <tr>
+                                            <td class="text-center"><img src="image/homepage135.png" alt="image"></td>
+                                            <td class="list text">Olema Rose Cotes De</td>
+                                            <td class="text-center list price">$25.99</td>
+                                            <td class="text-center list">
+                                                <ul>
+                                                    <li><i class="fa fa-minus-circle" aria-hidden="true"></i></li>
+                                                    <li>1</li>
+                                                    <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-center list price">$25.99</td>
+                                            <td class="text-center delete">×</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tab-order" class="tab-content">
+                                <div class="order-complete">
+                                    <p class="heading-order">Thank you. Your order has been received</p>
+                                    <div class="order-wrap">
+                                        <ul class="order-menu">
+                                            <li>
+                                                <h3>Order number:</h3>
+                                                <p>1599</p>
+                                            </li>
+                                            <li>
+                                                <h3>Date:</h3>
+                                                <p>December 11, 2018</p>
+                                            </li>
+                                            <li>
+                                                <h3>Total:</h3>
+                                                <p>$88.95</p>
+                                            </li>
+                                            <li>
+                                                <h3>Payment methob:</h3>
+                                                <p>Cash on delivery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="order-details">
+                                        <h1><a href="#">Order details</a></h1>
+                                        <div class="order-table">
+                                            <table class="order-table" >
+                                            <tbody>
+                                                <tr class="cart-subtotal">
+                                                    <td class="product-name">PRODUCT</td>
+                                                    <td class="total" data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>TOTAL</span></td>
+                                                </tr>
+                                                <tr class="cart-subtotal">
+                                                    <td class="product-name">Bougrier Rose dAnjou</td>
+                                                    <td class="total" data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>29.99</span></td>
+                                                </tr>
+                                                <tr class="order-total">
+                                                    <td class="product-name">Olema Rose Cotes De</td>
+                                                    <td class="total" data-title="Total"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>36.89</span> </td>
+                                                </tr>
+                                                <tr class="order-total">
+                                                    <td  class="product-name">Total </td>
+                                                    <td class="total text-d90000 font-weight-500"  data-title="Total"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol ">$</span>66.88</span> </td>
+                                                </tr>
+                                                <tr class="order-total">
+                                                    <td class="product-name">Shipping</td>
+                                                    <td class="total" data-title="Total"> Free Shipping</td>
+                                                </tr>
+                                                <tr class="order-total">
+                                                    <td class="product-name">Payment methob:</td>
+                                                    <td class="total" data-title="Total"> Cash on delivery</td>
+                                                </tr>
+                                                <tr class="order-total">
+                                                    <td  class="title product-name">ORDER TOTAL </td>
+                                                    <td class="total text-d90000 font-weight-500" data-title="Total"> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>69.99</span> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> <!-- /main-order-tracking --> 
+<a id="scroll-top"><i class="fa fa-angle-right" aria-hidden="true"></i></a> <!-- /#scroll-top -->
+
+<script src="javascript/jquery.min.js"></script>
+<script src="javascript/jquery.easing.js"></script>
+<script src="javascript/owl.carousel.min.js"></script>
+<script src="javascript/jquery-countTo.js"></script>
+<script src="javascript/jquery-waypoints.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/main.js"></script>
+</body>
+</html>
